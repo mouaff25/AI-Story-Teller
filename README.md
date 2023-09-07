@@ -1,6 +1,6 @@
-# AI-Story-Teller
+# AI Story Teller
 
-AI-Story-Teller: Unleash Creativity with AI-Powered Storytelling. Craft captivating stories from basic prompts, enriched with compelling narratives and vivid imagery. Embark on limitless literary journeys and nurture a passion for storytelling and imagination. 📖✨🌟
+Unleash Creativity with AI-Powered Storytelling. Craft captivating stories from basic prompts, enriched with compelling narratives and vivid imagery. Embark on limitless literary journeys and nurture a passion for storytelling and imagination. 📖✨🌟
 
 ## Inspiration
 
