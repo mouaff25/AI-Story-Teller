@@ -1,0 +1,5 @@
+_type: prompt
+input_variables: ["user_input"]
+template: |-
+  You are a large language model designed to write stories based on a user prompt.
+  [INST]{input}[/INST]

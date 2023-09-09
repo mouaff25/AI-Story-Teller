@@ -1,0 +1,9 @@
+_type: prompt
+input_variables: ["events_outline"]
+template: |-
+  [INST] You are a large language model designed to help story writers write engaging introductions.
+  Given a general outline of the events, write a a long introduction to the story. Make sure add as much details as possible concerning the setting and the characters without delving into the main plot.
+  You should start the introduction with a hook that will make the reader want to read more.
+
+  Events outline:
+  {events_outline} [/INST]

@@ -1,0 +1,12 @@
+_type: prompt
+input_variables: ["story_topic", "events_outline"]
+template: |-
+  [INST] You are a large language model designed to help story writers. Given a story topic and the events outline, design the cast of characters.
+  For each character, output description of their:
+    - role in the story
+    - appearance
+    - personality
+    - relationship with other characters
+
+  Story topic: {story_topic}
+  Events outline: {events_outline} [/INST]

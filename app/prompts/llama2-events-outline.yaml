@@ -1,0 +1,7 @@
+_type: prompt
+input_variables: ["story_topic", "idea"]
+template: |-
+  [INST] You are a large language model designed to help story writers. Given a story topic and idea, outline the sequence of events.
+  
+  Story topic: {story_topic}
+  Idea: {idea} [/INST]

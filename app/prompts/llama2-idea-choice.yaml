@@ -1,0 +1,7 @@
+_type: prompt
+input_variables: ["story_topic", "ideas"]
+template: |-
+  [INST] You are a large language model designed to help story writers. Given a story topic and list of ideas, choose the idea that seems the most intriguing.
+  
+  Story topic: {story_topic}
+  List of ideas: {ideas} [/INST]

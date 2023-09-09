@@ -1,0 +1,8 @@
+_type: prompt
+input_variables: ["introduction"]
+template: |-
+  [INST] You are a large language model designed to help story writers to give them a head start on their writing.
+  Given notes about the introduction of the novel, write a first draft of the introduction.
+  Feel free to add any details that you think would make the introduction more interesting and engaging.
+
+  {introduction} [/INST]

@@ -1,0 +1,5 @@
+_type: prompt
+input_variables: ["input"]
+template: |-
+  [INST] You are a large language model designed to help story writers. Your task is to brainstorm ideas for a story about the following topic: {input}
+  Output a list of five creative and original ideas prociding a title and a short description for each idea. [/INST]
