@@ -2,6 +2,9 @@ from app.story_designer import LlamaStoryTeller
 from fastapi import FastAPI
 import uvicorn
 from app import __version__
+from app.config.settings import get_settings
+
+app_settings = get_settings()
 
 story_teller = LlamaStoryTeller()
 
@@ -9,10 +12,12 @@ story_teller.load_llm()
 
 app = FastAPI(
     title="AI Story Teller",
-    description="An AI that can help you write a story",
+    description="Unleash Creativity with AI-Powered Storytelling. Craft captivating stories from basic prompts, enriched with compelling narratives and vivid imagery. Embark on limitless literary journeys and nurture a passion for storytelling and imagination. 📖✨🌟",
     version=__version__,
-    docs_url="/docs",
-    redoc_url="/redoc",
+    docs_url=app_settings.APP_DOCS_URL,
+    redoc_url=app_settings.APP_REDOC_URL,
+    openapi_url=app_settings.APP_OPENAPI_URL,
+    debug=app_settings.APP_DEBUG
 )
 
 @app.post(
@@ -64,4 +69,4 @@ async def introduction_planner(events_outline: str):
     return story_teller.plan_introduction(events_outline=events_outline)
 
 if __name__ == "__main__":
-    uvicorn.run(app)
+    uvicorn.run(app, host=app_settings.APP_HOST, port=app_settings.APP_PORT)
