@@ -1,7 +1,7 @@
 from functools import lru_cache
+from typing import List, Optional
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from typing import List, Optional
 
 
 class Settings(BaseSettings):
@@ -35,6 +35,7 @@ class Settings(BaseSettings):
     STORY_DESIGNER_CHARACTERS_DESIGNER_PROMPT_PATH: str = "./app/prompts/llama2-characters-designer.yaml"
     STORY_DESIGNER_INTRODUCTION_PLANNER_PROMPT_PATH: str = "./app/prompts/llama2-introduction-planner.yaml"
     STORY_DESIGNER_INTRODUCTION_WRITER_PROMPT_PATH: str = "./app/prompts/llama2-introduction-writer.yaml"
+
 
 @lru_cache()
 def get_settings() -> Settings:
